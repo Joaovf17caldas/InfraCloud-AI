@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InfraCloud AI</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="data:image/x-icon;base64," />
+  </head>
+  <body>
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-[#111618] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283339] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">InfraCloud AI</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">How it Works</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Benefits</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Plans & Pricing</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Testimonials</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">FAQ</a>
+            </div>
+            <button onclick="openSignupModal()" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1193d4] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Get Started</span>
+            </button>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4" style='background-image: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAA24gBrT7qOF_DTC5OY0RnQYCjze5ng5imsOm1EKPeH3EvxjZAzI_kgBDQWx1F6vGfwOOJOgwBsLwfK4lRt0bDIdL5HCoLVjQJrPzSC4oQiXeWeTw1-DaTTdx4VYVqapv9-u2L3UmOqrqvhBhRnlxFM8h2yG40DwqQbhNc8gztPAY243yhdlaASvSRHP8YilLVLYhKLHq-jTPXuQDE0nl4Zpro-1lzaTnvnm0jL3jiBGHpewb-J1p5kxYhLx7qGrrrl6AqWQH52b0");'>
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">Intelligent IT Infrastructure, Without the IT Team</h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base">InfraCloud AI provides a fully managed, intelligent IT infrastructure solution, eliminating the need for a dedicated IT team.</h2>
+                  </div>
+                  <button onclick="openSignupModal()" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1193d4] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                    <span class="truncate">Get Started</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- How It Works, Benefits, Plans, etc. (mantidos iguais) -->
+            <!-- ... (todo o conteúdo que você já tem, mantenha igual) ... -->
+
+            <!-- Call to Action Final -->
+            <div class="@container">
+              <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+                <div class="flex flex-col gap-2 text-center">
+                  <h1 class="text-white text-[32px] font-bold leading-tight @[480px]:text-4xl max-w-[720px]">Ready to Transform Your IT Infrastructure?</h1>
+                  <p class="text-white text-base font-normal leading-normal max-w-[720px]">Get started today and unlock the power of intelligent infrastructure.</p>
+                </div>
+                <div class="flex justify-center">
+                  <button onclick="openSignupModal()" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1193d4] text-white text-sm font-bold leading-normal tracking-[0.015em] grow">
+                    <span class="truncate">Get Started</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6">
+                <a class="text-[#9db0b9] text-base font-normal leading-normal" href="#">Privacy Policy</a>
+                <a class="text-[#9db0b9] text-base font-normal leading-normal" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#9db0b9] text-base font-normal leading-normal">© 2024 InfraCloud AI. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Modal de Cadastro -->
+    <div id="signupModal" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center z-50 p-4">
+      <div class="bg-[#1c2327] rounded-lg p-6 max-w-md w-full">
+        <h3 class="text-white text-xl font-bold mb-4">Get Started with InfraCloud AI</h3>
+        <form id="signupForm" onsubmit="submitForm(event)">
+          <input type="text" id="name" placeholder="Your Name" required class="w-full p-3 rounded bg-[#283339] text-white mb-3" />
+          <input type="email" id="email" placeholder="Your Email" required class="w-full p-3 rounded bg-[#283339] text-white mb-3" />
+          <select id="plan" class="w-full p-3 rounded bg-[#283339] text-white mb-4">
+            <option value="Basic">Basic - $99/month</option>
+            <option value="Pro">Pro - $299/month (Best Value)</option>
+            <option value="Enterprise">Enterprise - Custom</option>
+          </select>
+          <div class="flex gap-3">
+            <button type="submit" class="flex-1 bg-[#1193d4] text-white font-bold py-3 rounded">Submit</button>
+            <button type="button" onclick="closeModal()" class="flex-1 bg-[#283339] text-white py-3 rounded">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openSignupModal() {
+        document.getElementById('signupModal').classList.remove('hidden');
+      }
+
+      function closeModal() {
+        document.getElementById('signupModal').classList.add('hidden');
+      }
+
+      async function submitForm(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const plan = document.getElementById('plan').value;
+
+        try {
+          const response = await fetch('/api/signup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, plan })
+          });
+
+          const data = await response.json();
+          alert(data.message || 'Success!');
+          closeModal();
+        } catch (err) {
+          alert('Error: ' + err.message);
+        }
+      }
+    </script>
+  </body>
+</html>
